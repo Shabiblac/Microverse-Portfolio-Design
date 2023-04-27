@@ -1,0 +1,23 @@
+{
+  "name": "microverse-portfolio-design",
+  "version": "1.0.0",
+  "description": "Portfolio:SETUP AND MOBILE VEIW\r # create development branch\r # on features branch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shabiblac/Microverse-Portfolio-Design.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shabiblac/Microverse-Portfolio-Design/issues"
+  },
+  "homepage": "https://github.com/Shabiblac/Microverse-Portfolio-Design#readme",
+  "devDependencies": {
+    "hint": "^7.1.8"
+  }
+}
