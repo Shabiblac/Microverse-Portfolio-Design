@@ -12,14 +12,6 @@ body {
   background: #e5e5e5;
 }
 
-.phone-status {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  background-color: white;
-  padding: 25px;
-}
-
 #navigation {
   display: flex;
   width: 100%;
@@ -107,3 +99,9 @@ body {
   transform: translateY(10px);
   transition: 0.5s;
 }
+
+/* Works section */
+
+/* .works {
+
+} */
