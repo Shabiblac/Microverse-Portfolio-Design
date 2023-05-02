@@ -1,13 +1,4 @@
 # Microverse-Portfolio-Design
-<a name="readme-top"></a>
-
-<div align="center">
-
-  <br/>
-
-  <h3><b>Portfolio Site</b></h3>
-
-</div>
 
 # 📗 Table of Contents
 
