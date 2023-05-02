@@ -335,6 +335,16 @@ body {
   border-top-left-radius: 90px;
 }
 
+.contact-container h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  text-transform: capitalize;
+  align-items: center;
+  text-align: center;
+  padding-top: 103px;
+  color: #fff;
+}
 
 
 form {
