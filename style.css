@@ -406,7 +406,6 @@ textarea::placeholder {
 
 .cont:enabled {
   border: 1px solid #7f8cff;
-
   border-radius: 8px;
   color: #6070ff;
 }
