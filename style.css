@@ -363,3 +363,41 @@ form {
   justify-content: center;
   gap: 20px;
 }
+
+.form-items {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 17px;
+  color: #172B4D;
+}
+
+textarea {
+  font-size: 15px;
+  color: #B3BAC5;
+  font-weight: 400;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
+textarea::placeholder {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #b3bac5;
+}
+
+.form-items::placeholder {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172b4d;
+}
+
+.cont {
+  margin: 20px 0;
+}
