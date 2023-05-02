@@ -1,13 +1,4 @@
 # Microverse-Portfolio-Design
-<a name="readme-top"></a>
-
-<div align="center">
-
-  <br/>
-
-  <h3><b>Portfolio Site</b></h3>
-
-</div>
 
 # 📗 Table of Contents
 
@@ -24,9 +15,9 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [Portfolio:SETUP AND MOBILE VEIW] <a name="Portfolio:SETUP AND MOBILE VEIW"></a>
+# 📖 [Portfolio] <a name="Milestone 3: Contact-Form-Secion"></a>
 
-**[Portfolio:SETUP AND MOBILE VEIW]** This is a simple portfolio site, that is simple and yet elegant,classic and unique.
+**[Portfolio]** This is a simple portfolio site, that is simple and yet elegant,classic and unique.
 
 ## 🛠 Built With <a name="built-with"></a>
 <details>
@@ -37,23 +28,20 @@
   </ul>
 </details>
 
-<!-- Features -->
+
 
 ### Key Features <a name="key-features"></a>
+- [ ] **[Hero-section]**
+- [ ] **[Work-section]**
+- [ ] **[About-section]**
+- [ ] **[contact-form]**
+
+
 
 - **[Demo on what is linters and how it works]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://github.com/Shabiblac/Microverse-Portfolio-Design.git)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -77,14 +65,8 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:<br>
 
-<!--
-Example commands:
-
-```sh
-  cd my-folder
+ cd my-folder
   git clone https://github.com/Shabiblac/Microverse-Portfolio-Design.git
-```
---->
 
 ## Install Linters
 
@@ -161,8 +143,6 @@ If you think that change is necessary - open a Pull Request in this repository a
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **[contact-form]**
 - [ ] **[desktop-view]**
 - [ ] **[hamburger-menu]**
 
@@ -187,6 +167,7 @@ If you like this project, kindly leave a comment below and share it with someone
 
 
 I would like to thank Microverse for helping out with this project
+I would also like to thank my coding partner "Garvin" for contributing in this part of the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
