@@ -346,6 +346,15 @@ body {
   color: #fff;
 }
 
+.contact-container p {
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  padding: 20px;
+  transition: transform 3s;
+  font-weight: 400px;
+  color: #ebebff;
+}
 
 form {
   padding: 30px 24px 0 24px;
