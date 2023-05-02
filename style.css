@@ -334,3 +334,13 @@ body {
   background-position-x: right;
   border-top-left-radius: 90px;
 }
+
+
+
+form {
+  padding: 30px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
