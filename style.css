@@ -401,3 +401,8 @@ textarea::placeholder {
 .cont {
   margin: 20px 0;
 }
+
+#lined-img {
+  margin: 0 auto;
+  width: 8rem;
+}
