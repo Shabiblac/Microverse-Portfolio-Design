@@ -112,6 +112,7 @@ body {
   }
 
   #work-section {
+    overflow: hidden;
     margin-top: 46px;
     padding: 1em 1em;
     width: 95%;
@@ -123,7 +124,6 @@ body {
   }
   
   .card {
-    overflow: hidden;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
@@ -268,10 +268,6 @@ body {
     margin-bottom: 10px;
   }
   
-  .desktop-skills {
-    display: none;
-  }
-
   .skills {
     padding-top: 30px;
     width: 95%;
@@ -547,7 +543,13 @@ body {
     display: grid;
     padding: 45px;
     background-color: #e5e5e5;
-    margin: 46px;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    justify-items: center;
+    align-items: center;
+    margin-top: 46px;
   }
 
   .desktop-card {
@@ -562,6 +564,12 @@ body {
     margin: 50px auto;
     border: 1px solid #dfe1e6;
     border-radius: 24px;
+
+    /* flex-direction: row;
+    justify-content: space-between;
+    gap: 36px;
+    max-width: initial;
+     */
   }
 
   .desktop-card-description {
@@ -569,7 +577,7 @@ body {
     flex-direction: column;
     gap: 12px;
     width: 50%;
-    margin-left: 50px ;
+    /* margin-left: 50px ; */
   }
 
   .desktop-card-title {
@@ -588,7 +596,6 @@ body {
     color: #344563;
   }
   .canopy {
-    display: flex;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -678,9 +685,6 @@ body {
     margin: 50px auto;
   }
 
-  .skills {
-    display: none;
-  }
 
   .desktop-skills {
     display: flex;
@@ -702,5 +706,35 @@ body {
 
   }
 
-  
+  .contact-container {
+    background-image: url(./images/contact\ form\ background\ shapes@2x.png);
+    border-top-left-radius: 150px;
+    background-size: 100% 632.79px;
+    min-height: 718.7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-container p {
+    width: 538px;
+    height: 102px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .form-items,textarea {
+    width: 30rem;
+    border-radius: 2px;
+  }
+
+  .cont {
+    width: 142px;
+    margin-left: 10rem;
+  }
+
+  #lined-img img {
+    display: none;
+  }
 }
