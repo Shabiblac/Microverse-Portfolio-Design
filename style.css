@@ -36,6 +36,11 @@ body {
     color: #6070ff;
   }
   
+  .logo:hover {
+    transform: translateY(10px);
+    transition: 0.5s;
+  }
+
   .hero-section {
     background: #fff;
     padding: 1em 1em;
@@ -102,7 +107,10 @@ body {
   }
   
   /* Works section */
-  
+  #work-section-desktop {
+    display: none;
+  }
+
   #work-section {
     margin-top: 46px;
     padding: 1em 1em;
@@ -260,6 +268,10 @@ body {
     margin-bottom: 10px;
   }
   
+  .desktop-skills {
+    display: none;
+  }
+
   .skills {
     padding-top: 30px;
     width: 95%;
@@ -530,4 +542,165 @@ body {
   #work-section {
     display: none;
   }
+
+  #work-section-desktop {
+    display: grid;
+    padding: 45px;
+    background-color: #e5e5e5;
+    margin: 46px;
+  }
+
+  .desktop-card {
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 200ms ease-in;
+    width: 1156px;
+    padding: 40px;
+    margin: 50px auto;
+    border: 1px solid #dfe1e6;
+    border-radius: 24px;
+  }
+
+  .desktop-card-description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 50%;
+    margin-left: 50px ;
+  }
+
+  .desktop-card-title {
+    height: 46px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #172b4d;
+  }
+
+  .desktop-card-details {
+    width: 480.1px;
+    height: 53px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+  .canopy {
+    display: flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+  }
+
+  .canopy canopy-txt {
+    font-weight: 500;
+    font-size: 18px;
+    color: #344563;
+  }
+  .canopy li {
+    font-weight: 380;
+    font-size: 18px;
+    color: #7a869a;
+    padding: 30px;
+    padding-left: 0;
+  }
+
+  .desktop-card-tools {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 24px;
+    list-style: none;
+    margin-top: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .desktop-card-tools li {
+    padding: 0 12px;
+    color: #6070ff;
+    height: 24px;
+    background: #ebebff;
+    border-radius: 8px;
+  }
+  
+  .desktop-card-btn {
+    width: 126px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: #fff;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    padding: 12px;
+    color: #396df2;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.15s;
+  }
+  
+  
+  
+  .desktop-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .desktop-card-btn:hover {
+    color: #fff;
+    background-color: #396df2;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  }
+  
+  .desktop-card-btn:focus {
+    background: #2230d2;
+  }
+
+  #about {
+    background: #fff;
+    padding: 1em 1em;
+    border-top-right-radius: 90px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 40px;
+    margin: 50px auto;
+  }
+  .about-container {
+    width: 50%;
+    padding: 40px;
+    margin: 50px auto;
+  }
+
+  .skills {
+    display: none;
+  }
+
+  .desktop-skills {
+    display: flex;
+    width: 50%;
+  }
+
+  .language-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+  }
+
+  .language-list li {
+    width: 122px;
+    height: 120px;
+    padding: 12px;
+
+  }
+
+  
 }
