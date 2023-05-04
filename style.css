@@ -676,35 +676,62 @@ body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 40px;
-    margin: 50px auto;
+    padding: 7rem 3rem;
+    margin: auto;
+
+    
+    
   }
   .about-container {
-    width: 50%;
+    /* width: 50%; */
     padding: 40px;
-    margin: 50px auto;
+    /* margin: 50px auto; */
+
+    width: 100%;
+    padding-top: 0;
   }
 
+  .about-details {
+    font-size: 16px;
+    width: 80%;
+    margin: 30px 0
+  }
 
-  .desktop-skills {
-    display: flex;
-    width: 50%;
+  .skills {
+    width: 100%;
+    padding-top: 0;
   }
 
   .language-list {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    list-style: none;
+    list-style: none; */
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
   }
 
   .language-list li {
-    width: 122px;
+    /* width: 122px;
     height: 120px;
-    padding: 12px;
+    padding: 12px; */
+
+    flex-direction: column;
+    width: 122px;
+    align-items: flex-start;
 
   }
+  .socials {
+    margin-top: 2em;
+  }
+
+  .resume {
+    margin-top: 2em;
+  }
+  
 
   .contact-container {
     background-image: url(./images/contact\ form\ background\ shapes@2x.png);
