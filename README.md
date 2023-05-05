@@ -15,7 +15,7 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [Portfolio] <a name="Milestone 3: Contact-Form-Secion"></a>
+# 📖 [Portfolio] <a name="Milestone 4: Desktop-View"></a>
 
 **[Portfolio]** This is a simple portfolio site, that is simple and yet elegant,classic and unique.
 
@@ -35,6 +35,9 @@
 - [ ] **[Work-section]**
 - [ ] **[About-section]**
 - [ ] **[contact-form]**
+- [ ] **[Mobile-view]**
+- [ ] **[Desktop-view]**
+
 
 
 
@@ -143,8 +146,8 @@ If you think that change is necessary - open a Pull Request in this repository a
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
-- [ ] **[desktop-view]**
-- [ ] **[hamburger-menu]**
+- [ ] **[Popup-window]**
+- [ ] **[Form-validation]**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -166,8 +169,8 @@ If you like this project, kindly leave a comment below and share it with someone
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Microverse for helping out with this project
-I would also like to thank my coding partner "Garvin" for contributing in this part of the project.
+I would like to thank Microverse for helping out with this project.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
