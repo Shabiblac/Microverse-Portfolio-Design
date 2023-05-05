@@ -57,16 +57,13 @@ body {
   }
   
   #name {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 130%;
-    display: flex;;
-    color: #172b4d;
-    width: 20rem;
-    height: 10rem;
-    align-items: center;
-    margin-top: 1rem;
+    width: 85%;
+  height: 150px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  margin-top: 46px;
   }
   
   .details {
@@ -486,7 +483,7 @@ body {
   }
   
   .hero-section {
-    background-image: url(./images/Header\ bg\ 0.75.png);
+    background-image: url(./images/Header\ bg.svg);
     background-size: 100% 691.46px;
     background-position-x: right;
     padding-top: 8rem;
@@ -514,18 +511,20 @@ body {
   }
 
   .details {
-    width: 64%;
+    width: 100%;
+    margin-top: 1rem;
+    height: 28px;
   }
   
   .connect {
     transform: translateY(-2rem);
-    margin-top: 0.5em;
+    margin-top: 1.5rem;
+    height: 0;
   }
 
-  .socials {
-    margin-top: 1.5em;
+  .hero-section ul {
+    margin-top: -3em;
   }
-
   #work-section {
     display: none;
   }
