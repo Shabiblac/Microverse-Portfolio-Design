@@ -480,6 +480,13 @@ textarea::placeholder {
     align-items: flex-start;
   }
 
+  .canopy li {
+    margin-right: 25px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+  }
+
   .desktop-links li:hover {
     color: #6070ff;
     transform: translateY(10px);
@@ -552,13 +559,13 @@ textarea::placeholder {
     max-width: initial;
     padding: 24px;
     margin: 50px;
-    
   }
 
   .card:hover {
     cursor: pointer;
-    border: 2px solid #A7AEFF;
+    border: 2px solid #a7aeff;
   }
+
   .two {
     flex-direction: row-reverse;
   }
@@ -589,7 +596,7 @@ textarea::placeholder {
     width: 108%;
     margin-top: 1rem;
   }
- 
+
   .canopy {
     display: flex;
     align-items: center;
@@ -603,13 +610,6 @@ textarea::placeholder {
     font-size: 13px;
     line-height: 16px;
     color: #344563 !important;
-  }
-
-  .canopy li {
-    margin-right: 25px;
-    font-size: 13px;
-    line-height: 16px;
-    color: #7a869a;
   }
 
   #about {
