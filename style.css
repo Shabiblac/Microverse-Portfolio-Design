@@ -131,7 +131,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  transition: transform 200ms ease-in;
 }
 
 .card-img img {
@@ -220,10 +219,6 @@ body {
 .resume {
   margin: 15px 0;
   width: 162px;
-}
-
-.card:hover {
-  transform: scale(1.02);
 }
 
 .btn:hover {
@@ -541,7 +536,7 @@ textarea::placeholder {
 
   #work-section-desktop {
     width: 80%;
-    margin: auto;
+    margin: 50px;
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-flow: row;
@@ -555,13 +550,15 @@ textarea::placeholder {
     justify-content: space-between;
     gap: 36px;
     max-width: initial;
+    padding: 24px;
+    margin: 50px;
+    
   }
 
   .card:hover {
     cursor: pointer;
-    border: 2px solid #a7aeff;
+    border: 2px solid #A7AEFF;
   }
-
   .two {
     flex-direction: row-reverse;
   }
@@ -576,16 +573,43 @@ textarea::placeholder {
     width: 100%;
   }
 
+  .card-img.tonic {
+    width: 50%;
+  }
+
   .card-description {
     margin-right: 1rem;
   }
 
-  .card-details {
-    height: auto;
+  .card-description.tonic {
+    width: 47%;
   }
 
   .card-tools {
     width: 108%;
+    margin-top: 1rem;
+  }
+ 
+  .canopy {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  #canopy-text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563 !important;
+  }
+
+  .canopy li {
+    margin-right: 25px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
   }
 
   #about {
