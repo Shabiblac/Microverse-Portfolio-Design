@@ -6,7 +6,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  text-decoration: none;
 }
 
 body {
@@ -23,7 +22,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index:2;
+  z-index: 2;
   justify-content: space-between;
   padding: 25px;
   background-color: #fff;
@@ -32,12 +31,13 @@ body {
 #navigation > div:first-child {
   width: 100px;
   display: flex;
-  align-items:center;
+  align-items: center;
 }
 
 .logo {
   text-transform: capitalize;
   width: fit-content;
+
   /* height: 20px; */
   font-weight: 700;
   font-size: 18px;
@@ -52,7 +52,7 @@ body {
   transition: 0.5s;
 }
 
-.cover-mobile{
+.cover-mobile {
   display: flex;
   position: absolute;
   background-color: #364afc;
@@ -61,8 +61,10 @@ body {
   width: 100%;
   top: 0;
   right: 0;
+
   /* backdrop-filter: blur(4px);  */
 }
+
 .cover-mobile ul {
   margin-top: 70px;
   margin-left: 15px;
@@ -72,7 +74,7 @@ body {
   margin-bottom: 20px;
 }
 
-.cover-mobile li a{
+.cover-mobile li a {
   position: relative;
   z-index: 5;
   text-align: center;
@@ -85,25 +87,67 @@ body {
   color: #fff;
 }
 
-.blur{
+.blur {
   filter: blur(4px);
+}
+
+.canopy li {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.card-tools li {
+  margin-right: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  background: #ebebff;
+  padding: 4px 12px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.language-list li {
+  background: #f7f7f9;
+  list-style-type: none;
+  border-radius: 8px;
+  margin: 12px 0;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #253858;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+}
+
+.canopy li:first-child {
+  text-transform: uppercase;
+  color: #344563;
+  list-style: none;
 }
 
 .cover-mobile ul li:hover {
   transform: translateY(-6px);
-} 
+}
 
 .hide {
   display: none;
 }
 
 .cancle-mobile img {
-  position: absolute;                          ;
+  position: absolute;
   top: 25px;
   right: 20px;
 }
 
-.hero-section, .blur {
+.hero-section,
+.blur {
   background-color: #fff;
   padding: 1em 1em;
   background-image: url(./images/svg/header-shapes\ mobile@2x.svg);
@@ -112,7 +156,7 @@ body {
   border-bottom-left-radius: 80px;
   background-repeat: no-repeat;
   min-height: 587.15px;
-  z-index: -2;                                                                                                                                                                                                                                                                                                             
+  z-index: -2;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -123,7 +167,6 @@ body {
   position: relative;
   z-index: 1;
 }
-
 
 #name {
   width: 98%;
@@ -136,8 +179,7 @@ body {
 
 .details {
   width: 95%;
-
-  margin-top: .5em;
+  margin-top: 0.5em;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -146,7 +188,7 @@ body {
 
 .connect {
   text-transform: capitalize;
-  padding-top: .5em;
+  padding-top: 0.5em;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -163,7 +205,7 @@ body {
   justify-content: space-between;
   width: 170.17px;
   height: 20px;
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .icons:hover {
@@ -229,13 +271,6 @@ body {
   margin: 12px 0;
 }
 
-.canopy li {
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  color: #7a869a;
-}
-
 .card-details {
   height: 76px;
   font-weight: 400;
@@ -252,18 +287,6 @@ body {
   height: 24px;
   list-style: none;
   margin-bottom: 10px;
-}
-
-.card-tools li {
-  margin-right: 8px;
-  border-radius: 8px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  background: #ebebff;
-  padding: 4px 12px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
 }
 
 .btn {
@@ -360,28 +383,6 @@ body {
 
 .language-list {
   margin-top: 36px;
-}
-
-.language-list li {
-  background: #f7f7f9;
-  list-style-type: none;
-  border-radius: 8px;
-  margin: 12px 0;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #253858;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px;
-  gap: 20px;
-}
-
-.canopy li:first-child {
-  text-transform: uppercase;
-  color: #344563;
-  list-style: none;
 }
 
 .frameworks {
@@ -522,10 +523,9 @@ textarea::placeholder {
     justify-content: flex-end;
   }
 
-
   .desktop-menu {
     display: flex;
-    gap:30px;
+    gap: 30px;
     justify-content: flex-end;
     width: 300px;
     align-items: center;
@@ -761,4 +761,3 @@ textarea::placeholder {
     display: none;
   }
 }
-
