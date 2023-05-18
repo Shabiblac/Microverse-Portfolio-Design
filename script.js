@@ -32,5 +32,47 @@ function closeMenu() {
   desktopMenu.classList.toggle('hide');
   mobileMenu.classList.toggle('hide');
 }
-
 closeMobile.addEventListener('click', closeMenu);
+
+// FORM VALIDATION
+const nameError = document.querySelector('#name-error');
+const emailError = document.querySelector('#email-error');
+const submitError = document.querySelector('#submit-error');
+function validate() {
+  const name = document.getElementById('user-name').value;
+  if (name.lenght === 0) {
+    nameError.innerHTML = 'Name is required';
+    return false;
+  }
+  if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+    nameError.innerHTML = 'Invalid name';
+    return false;
+  }
+  nameError.innerHTML = '<img src="images/checkbox-checked-solid-24 (1).png" alt="check icon">';
+  return true;
+}
+
+function validateEmail() {
+  const email = document.getElementById('user-email').value;
+
+  if (email.lenght === 0) {
+    emailError.innerHTML = 'Email is required';
+    return false;
+  }
+  if (!email.match(/^([a-za-z0-9_\-.])+@([a-za-z0-9_\-.])+\.([a-za-z]{2,4})$/)) {
+    emailError.innerHTML = 'Invalid email';
+    return false;
+  }
+  emailError.innerHTML = '<img src="images/checkbox-checked-solid-24 (1).png" alt="check icon">';
+  return true;
+}
+
+function validateForm() {
+  if (!validate() || !validateEmail()) {
+    submitError.style.display = 'block';
+    submitError.innerHTML = 'Please fix errors to submit';
+    setTimeout(() => { submitError.style.display = 'none'; }, 3000);
+    return false;
+  } return true;
+}
+validateForm();
