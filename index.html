@@ -7,11 +7,13 @@
     <title> MV-Portfolio</title>
     <!-- stylesheet link  -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
      <!-- font awesome -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+<main id="main-content " class="main-bg">
     <!-- HEADER -->
     <header id="navigation">
         <div><a href="#hero" class="logo">my logo</a></div>
@@ -31,7 +33,7 @@
     </header>
 
     <!-- HERO - SECTION -->
-<section class="hero-section" id="hero">
+    <section class="hero-section" id="hero">
     <div class="hero-container">
         <h1 id="name">
            I'm Alexander <br> Glad to see you!
@@ -58,10 +60,10 @@
             </a></li>
         </ul>
     </div>
-</section>
+    </section>
 
     <!-- WORK SECTION -->
-<section id="work-section">
+    <section id="work-section">
     <div class="card">
             <div class="card-img">
                 <img src="./images/Snapshoot Portfolio.png" alt="tonic image">
@@ -81,7 +83,7 @@
                     <li>CSS</li>
                     <li>Javascript</li>
                 </ul>
-                <button class="btn">See Project</button>
+                <button type="submit" class="btn">See Project</button>
             </div>
     </div>
     
@@ -105,7 +107,7 @@
                     <li>CSS</li>
                     <li>Javascript</li>
                 </ul>
-                <button class="btn">See Project</button>
+                <button type="submit" class="btn">See Project</button>
             </div>
         </div>
 
@@ -128,7 +130,7 @@
                     <li>CSS</li>
                     <li>Javascript</li>
                 </ul>
-                <button class="btn">See Project</button>
+                <button type="submit" class="btn">See Project</button>
             </div>
         </div>
 
@@ -151,12 +153,12 @@
                     <li>CSS</li>
                     <li>Javascript</li>
                 </ul>
-                <button class="btn">See Project</button>
+                <button type="submit" class="btn">See Project</button>
             </div>
         </div>
-</section>
+    </section>
 
-<section id="work-section-desktop">
+    <section id="work-section-desktop">
     <div class="card">
         <div class="card-img tonic">
             <img src="./images/desktop-img/Snapshoot Portfolio(1).png" alt="tonic image">
@@ -176,7 +178,7 @@
                 <li>CSS</li>
                 <li>Javascript</li>
             </ul>
-            <button class="btn">See Project</button>
+            <button type="submit" class="btn btn-1">See Project</button>
         </div>
 </div>
 
@@ -202,7 +204,7 @@
                 <li>CSS</li>
                 <li>Javascript</li>
             </ul>
-            <button class="btn">See Project</button>
+            <button type="submit" class="btn btn-2">See Project</button>
         </div>
     </div>
 
@@ -226,7 +228,7 @@
             <li>CSS</li>
             <li>Javascript</li>
         </ul>
-            <button class="btn">See Project</button>
+            <button type="submit" class="btn btn-3">See Project</button>
         </div>
     </div>
 
@@ -249,14 +251,13 @@
             <li>CSS</li>
             <li>Javascript</li>
         </ul>
-            <button class="btn">See Project</button>
+            <button type="submit" class="btn btn-4">See Project</button>
         </div>
     </div>
-</section> 
+    </section> 
 
-
-<!-- ABOUT - ME - SECTION -->
-<section id="about">
+    <!-- ABOUT - ME - SECTION -->
+    <section id="about">
     <div class="about-container">
         <p class="myself">About Myself</p>
         <p class="about-details">
@@ -280,7 +281,7 @@
                 <i><img class="icons" src="./images/icons/microverse.svg" alt=""></i>
             </a></li>
         </ul>
-        <button class="btn resume">Get my resume</button>
+        <button type="submit" class="btn resume">Get my resume</button>
     </div>
     <ul class="skills">
         <li class="languages">
@@ -321,9 +322,9 @@
             </div>
         </li>
     </ul>
-</section> 
+    </section> 
 
-<!-- CONTACT - FORM - SECTION -->
+    <!-- CONTACT - FORM - SECTION -->
      <section id="contact-form">
         <div class="contact-container">
             <h2>contact me</h2>
@@ -343,8 +344,11 @@
             </div>
        </div>
     </section>
+</main>
+    <!-- Window pop-up -->
+    <div class="modal-wrapper"></div>
 
-<script src="popup.js"></script>
 <script src="script.js"></script>
+<script src="popup.js"></script>
 </body>
 </html>
