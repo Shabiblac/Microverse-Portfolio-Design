@@ -1,4 +1,5 @@
 const body = document.querySelector('body');
+// const overlay = document.querySelector('.overlay');
 const mainBg = document.querySelector('.main-bg');
 const buttons = document.querySelectorAll('.btn');
 
