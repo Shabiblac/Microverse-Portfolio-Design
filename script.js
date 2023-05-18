@@ -32,5 +32,4 @@ function closeMenu() {
   desktopMenu.classList.toggle('hide');
   mobileMenu.classList.toggle('hide');
 }
-
 closeMobile.addEventListener('click', closeMenu);
