@@ -333,10 +333,13 @@
                 I'd love to help with it!
             </p>
             <form action="https://formspree.io/f/xgebdkzr" method="POST">
-                <input type="text" name="fname" placeholder="Lorem Ipsum" maxlength="30" required class="form-items">
-                <input name="Email" type="email" placeholder="loremipsum@gmail.com" required class="form-items">
+                <input type="text" name="fname" placeholder="Lorem Ipsum" maxlength="30" class="form-items" id="user-name" onkeyup="validate()">
+                <span id="name-error"></span>
+                <input name="Email" type="email" placeholder="loremipsum@gmail.com" class="form-items" id="user-email" onkeyup="validateEmail()">
+                <span id="email-error"></span>
                 <textarea name="thoughts" maxlength="500" placeholder="Write your message here..." required></textarea>
-                <button type="submit" class="btn cont">Get in touch</button>
+                <button type="submit" class="btn cont" onclick="return validateForm()">Get in touch</i></button>
+                <span id="submit-error"></span>
             </form>
 
             <div id="lined-img">
