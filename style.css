@@ -439,6 +439,7 @@ form {
   justify-content: center;
   gap: 20px;
 }
+
 form span {
   color: red;
 }
