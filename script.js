@@ -38,10 +38,8 @@ closeMobile.addEventListener('click', closeMenu);
 const nameError = document.querySelector('#name-error');
 const emailError = document.querySelector('#email-error');
 const submitError = document.querySelector('#submit-error');
-
 function validate() {
   const name = document.getElementById('user-name').value;
-
   if (name.lenght === 0) {
     nameError.innerHTML = 'Name is required';
     return false;
