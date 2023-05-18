@@ -439,6 +439,9 @@ form {
   justify-content: center;
   gap: 20px;
 }
+form span {
+  color: red;
+}
 
 .form-items {
   background: #fff;
