@@ -80,12 +80,6 @@ const localData = () => {
   };
   localStorage.setItem('userData', JSON.stringify(userData));
 };
-const storedDetails = () => {
-  const info = JSON.parse(localStorage.getItem('userData'));
-  formName.value = info.formName;
-  email.value = info.email;
-  formText.value = info.formText;
-};
 function validateForm() {
   if (!validate() || !validateEmail()) {
     submitError.style.display = 'block';
@@ -94,7 +88,27 @@ function validateForm() {
     return false;
   }
   localData();
-  storedDetails();
   return true;
 }
 validateForm();
+
+const storedDetails = () => {
+  if (localStorage.getItem('formData')) {
+    const formData = JSON.parse(localStorage.getItem('formData'));
+    formName.value = formData.formName;
+    email.value = formData.email;
+    formText.value = formData.formText;
+  }
+};
+
+document.getElementById('user-name').addEventListener('change', localData);
+document.getElementById('user-email').addEventListener('change', localData);
+document.getElementById('user-text').addEventListener('change', localData);
+
+// Event listener for form submission
+document.getElementById('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  localData();
+});
+
+window.onload = storedDetails;
