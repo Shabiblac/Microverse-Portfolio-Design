@@ -157,10 +157,6 @@ ul {
   padding: 0;
 }
 
-/* .hide {
-  display: none;
-} */
-
 @media only screen and (max-width: 768px) {
   .ven-detail-stack-wrapper {
     display: flex;
