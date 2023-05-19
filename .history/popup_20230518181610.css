@@ -1,8 +1,8 @@
-
 .no-scroll {
   overflow: hidden;
 }
 
+/* wrapper */
 .ven-overlay {
   position: fixed;
   overflow-y: scroll;
@@ -22,6 +22,7 @@
   display: block;
 }
 
+/* modal pop-up inner div */
 .ven-overlay .ven-modal-ul {
   width: 80%;
   margin: auto;
@@ -59,20 +60,8 @@
   color: #091e42;
 }
 
-.ven-tech-used-stack {
-  display: flex;
-  gap: 5px;
-}
-
 li {
   list-style-type: none;
-}
-
-.ven-canopy-list-wrapper li {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
 }
 
 .ven-tech-used-stack li {
@@ -87,6 +76,13 @@ li {
   line-height: 16px;
 }
 
+.ven-canopy-list-wrapper li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 .ven-canopy-list-wrapper li:nth-child(3),
 .ven-canopy-list-wrapper li:nth-child(5) {
   color: rgba(122, 134, 154, 1);
@@ -94,6 +90,11 @@ li {
 
 .ven-featured-img-wrapper img {
   width: 100%;
+}
+
+.ven-tech-used-stack {
+  display: flex;
+  gap: 5px;
 }
 
 .ven-canopy-list-wrapper {
@@ -117,6 +118,7 @@ li {
 .ven-detail-stack-wrapper {
   display: flex;
   gap: 36px;
+  margin-bottom: 111px;
 }
 
 .ven-tech-used {
@@ -157,22 +159,10 @@ ul {
   padding: 0;
 }
 
-@media only screen and (max-width: 768px) {
-  .ven-detail-stack-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 12px;
-  }
-
-  .ven-sources {
-    display: flex;
-    flex-basis: 25%;
-    justify-content: center;
-  }
-
-  .ven-tech-used-stack {
-    display: flex;
-    flex-wrap: wrap;
-  }
+* {
+  box-sizing: border-box;
 }
+
+/* .hide{
+  display: none;
+} */

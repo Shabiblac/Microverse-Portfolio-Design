@@ -1,82 +1,8 @@
+const body = document.querySelector('body');
 const mainBg = document.querySelector('.main-bg');
+const buttons = document.querySelectorAll('.btn');
+
 const modalWrapper = document.querySelector('.modal-wrapper');
-
-const worksContainer = document.querySelector('#work-section');
-
-// define cards elements to be created unto page
-const cardObjects = [
-  {
-    img: './images/Snapshoot Portfolio.png" alt="tonic image',
-    title: 'Tonic',
-    type: 'CANOPY',
-    dev: 'Back End Dev',
-    year: 2015,
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    btn: 'See projects',
-  },
-
-  {
-    img: './images/Snapshoot Portfolio (1).png',
-    title: 'Multi-Post Stories',
-    type: 'CANOPY',
-    dev: 'Back End Dev',
-    year: 2015,
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    btn: 'See projects',
-  },
-  {
-    img: './images/Snapshoot Portfolio (2).png',
-    title: 'Tonic',
-    type: 'CANOPY',
-    dev: 'Back End Dev',
-    year: 2015,
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    btn: 'See projects',
-  },
-
-  {
-    img: './images/Snapshoot Portfolio (3).png',
-    title: 'Multi-Post Stories',
-    type: 'CANOPY',
-    dev: 'Back End Dev',
-    year: 2015,
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    tech: ['HTML', 'CSS', 'JavaScript'],
-    btn: 'See projects',
-  },
-];
-/* eslint-disable no-plusplus */
-// create card unto page
-function createCard() {
-  for (let card = 0; card < cardObjects.length; card++) {
-    worksContainer.innerHTML += ` 
-    <div class="card two">
-    <div class="card-img tonic">
-        <img src="${cardObjects[card].img}" alt="tonic image">
-    </div>
-    <div class="card-description">
-        <h2 class="card-title">${cardObjects[card].title}</h2>
-        <ul class="canopy">
-            <li id="canopy-text">${cardObjects[card].type}</li>
-            <li>${cardObjects[card].dev}</li>
-            <li>${cardObjects[card].year}</li>
-        </ul>
-        <p class="card-details">
-        ${cardObjects[card].description}</p>
-        <ul class="card-tools">
-            <li>${cardObjects[card].tech[0]}</li>
-            <li>${cardObjects[card].tech[1]}</li>
-            <li>${cardObjects[card].tech[2]}</li>
-        </ul>
-        <button type="submit" class="btn project-btn btn-${card + 1}">${cardObjects[card].btn}</button>
-    </div>
-</div>
-    `;
-  }
-}
 
 const modalElement = [{
   id: 1,
@@ -233,44 +159,40 @@ const displayModal = (element) => {
     `;
 };
 
-window.onload = () => {
-  createCard();
-  const venBtn = document.querySelectorAll('.project-btn');
+buttons.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    body.classList.add('no-scroll');
+    mainBg.classList.add('bg-blur');
 
-  venBtn.forEach((btn) => {
-    const body = document.querySelector('body');
-    btn.addEventListener('click', () => {
-      body.classList.add('no-scroll');
-      mainBg.classList.add('bg-blur');
+    if (btn.classList.contains('btn-1')) {
+      modalWrapper.classList.remove('hide');
+      displayModal(modalElement[0]);
+    }
 
-      if (btn.classList.contains('btn-1')) {
-        modalWrapper.classList.remove('hide');
-        displayModal(modalElement[0]);
-      }
+    if (btn.classList.contains('btn-2')) {
+      modalWrapper.classList.remove('hide');
 
-      if (btn.classList.contains('btn-2')) {
-        modalWrapper.classList.remove('hide');
+      displayModal(modalElement[1]);
+    }
 
-        displayModal(modalElement[1]);
-      }
+    if (btn.classList.contains('btn-3')) {
+      modalWrapper.classList.remove('hide');
+      displayModal(modalElement[2]);
+    }
 
-      if (btn.classList.contains('btn-3')) {
-        modalWrapper.classList.remove('hide');
-        displayModal(modalElement[2]);
-      }
+    if (btn.classList.contains('btn-4')) {
+      modalWrapper.classList.remove('hide');
+      displayModal(modalElement[3]);
+    }
 
-      if (btn.classList.contains('btn-4')) {
-        modalWrapper.classList.remove('hide');
-        displayModal(modalElement[3]);
-      }
-
-      const cancelIcon = document.querySelector('.ven-cancel-icon');
-      const modalContainer = document.querySelector('.ven-modal');
-      cancelIcon.addEventListener('click', () => {
+    setTimeout(() => {
+      const cancelBtn = document.querySelector('.ven-cancel-icon');
+      function cancelFunction() {
         body.classList.remove('no-scroll');
         mainBg.classList.remove('bg-blur');
-        modalContainer.classList.toggle('hide');
-      });
-    });
+        modalWrapper.classList.add('hide');
+      }
+      cancelBtn.addEventListener('click', cancelFunction);
+    }, 200);
   });
-};
+});
