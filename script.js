@@ -111,4 +111,4 @@ document.getElementById('form').addEventListener('submit', (e) => {
   localData();
 });
 
-window.onload = storedDetails;
+window.onload = storedDetails();
