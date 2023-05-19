@@ -440,6 +440,10 @@ form {
   gap: 20px;
 }
 
+form span {
+  color: red;
+}
+
 .form-items {
   background: #fff;
   padding: 20px;
