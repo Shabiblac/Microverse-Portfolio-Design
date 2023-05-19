@@ -68,11 +68,11 @@ function validateEmail() {
 }
 
 // LOCAL SRORAGE
-const formName = document.getElementById('user-name');
-const email = document.getElementById('user-email');
-const formText = document.getElementById('user-text');
 
 const localData = () => {
+  const formName = document.getElementById('user-name');
+  const email = document.getElementById('user-email');
+  const formText = document.getElementById('user-text');
   const userData = {
     userName: formName.value,
     UserMail: email.value,
@@ -80,6 +80,27 @@ const localData = () => {
   };
   localStorage.setItem('userData', JSON.stringify(userData));
 };
+
+const storedDetails = () => { // get data from the local storage and display in on the input field
+  const formName = document.getElementById('user-name');
+  const email = document.getElementById('user-email');
+  const formText = document.getElementById('user-text');
+
+  if (localStorage.getItem('userData')) {
+    const info = JSON.parse(localStorage.getItem('userData'));
+    formName.value = info.userName;
+    email.value = info.UserMail;
+    formText.value = info.txt;
+  }
+};
+window.addEventListener('DOMContentLoaded', storedDetails);
+
+document.getElementById('user-name').addEventListener('change', localData);
+document.getElementById('user-email').addEventListener('change', localData);
+document.getElementById('user-text').addEventListener('change', localData);
+
+// Event listener for form submission
+
 function validateForm() {
   if (!validate() || !validateEmail()) {
     submitError.style.display = 'block';
@@ -88,27 +109,7 @@ function validateForm() {
     return false;
   }
   localData();
+
   return true;
 }
 validateForm();
-
-const storedDetails = () => {
-  if (localStorage.getItem('formData')) {
-    const formData = JSON.parse(localStorage.getItem('formData'));
-    formName.value = formData.formName;
-    email.value = formData.email;
-    formText.value = formData.formText;
-  }
-};
-
-document.getElementById('user-name').addEventListener('change', localData);
-document.getElementById('user-email').addEventListener('change', localData);
-document.getElementById('user-text').addEventListener('change', localData);
-
-// Event listener for form submission
-document.getElementById('form').addEventListener('submit', (e) => {
-  e.preventDefault();
-  localData();
-});
-
-window.onload = storedDetails();
