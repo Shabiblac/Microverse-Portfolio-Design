@@ -48,9 +48,9 @@ const cardObjects = [
     btn: 'See projects',
   },
 ];
+/* eslint-disable no-plusplus */
 // create card unto page
 function createCard() {
-  /* eslint-disable no-plusplus */
   for (let card = 0; card < cardObjects.length; card++) {
     worksContainer.innerHTML += ` 
     <div class="card two">
@@ -235,7 +235,6 @@ const displayModal = (element) => {
 
 window.onload = () => {
   createCard();
-
   const venBtn = document.querySelectorAll('.project-btn');
 
   venBtn.forEach((btn) => {
