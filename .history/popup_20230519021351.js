@@ -161,7 +161,6 @@ const displayModal = (element) => {
 };
 
 buttons.forEach((btn) => {
-  console.log("Testing")
   btn.addEventListener('click', () => {
     body.classList.add('no-scroll');
     mainBg.classList.add('bg-blur');
