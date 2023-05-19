@@ -73,6 +73,7 @@ function validateForm() {
     submitError.innerHTML = 'Please fix errors to submit';
     setTimeout(() => { submitError.style.display = 'none'; }, 3000);
     return false;
-  } return true;
+  } else{
+    return true;
+  }
 }
-validateForm();
